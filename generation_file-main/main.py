@@ -12,7 +12,7 @@ bot = telebot.TeleBot(token='my_token', parse_mode='html')
 formats = ['.jpg', '.png', '.svg', '.gif', '.ico', '.mp4', '.avi', '.webm', '.doc', '.docx', '.xls', '.xlsx', '.txt', '.pdf', '.css', '.html', '.js', '.json', '.zip', '.rar']
 
 # Добавим меню кастомных команд, и пропишем туда стандартную команду /start. С её помощью можно будет перезапустить бота и начать по-новой.
-bot.set_my_commands([types.BotCommand('/start', 'перезапуск бота')])
+bot.set_my_commands([types.BotCommand('/start', 'restart the bot')])
 
 # Начальный шаг #1. Функция приветствия, приветствует пользователя и предлагает выбрать расширение файла.
 # С помощью хэндлера говорим, что данная функция будет запускаться при первом контакте с ботом командой /start.
